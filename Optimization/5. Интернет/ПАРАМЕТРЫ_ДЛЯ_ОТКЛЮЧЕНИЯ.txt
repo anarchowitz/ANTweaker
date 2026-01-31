@@ -1,0 +1,8 @@
+Selective suspend
+Powersaving mode
+Gigabit lite
+Green ethernet
+Energy ethernet
+ethernet (EEE)
+Advanced EEE
+(Так же эти названия могут у вас дублироваться на русском языке)
