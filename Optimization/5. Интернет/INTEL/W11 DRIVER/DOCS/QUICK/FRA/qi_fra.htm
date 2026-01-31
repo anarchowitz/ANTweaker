@@ -1,0 +1,207 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"><HTML>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Guide d'installation rapide des cartes réseau Intel(R)</title>
+</head>
+<body>
+
+<h1>Installation des cartes réseau Intel<sup>&reg;</sup></h1>
+<hr>
+
+<p>Cette page fournit une fiche d'instructions d'installation des appareils et des logiciels Ethernet Intel&reg;.</p>
+
+<p>Pour obtenir des informations détaillées sur l'installation et la configuration, reportez-vous à ce qui suit&nbsp;:</p>
+
+<ul>
+  <li><a href="https://cdrdv2.intel.com/v1/dl/getContent/705831" target="_blank">Guide de l'utilisateur des cartes Ethernet et des appareils Intel&reg;</a> &ndash;Disponible sur le centre de ressources et de documentation Intel</li>
+  <li>Fichiers README à l'intérieur des archives .tar des pilotes Linux* et FreeBSD*</li>
+</ul>
+
+<h2>Installer la carte réseau Ethernet Intel<sup>&reg;</sup></h2>
+
+<h3>Installation d'une carte</h3>
+    <ol>
+      <li>Mettez l'ordinateur hors tension et débranchez le cordon d'alimentation. En cas d'installation sans arrêt du serveur, reportez-vous tout d'abord à la documentation du serveur.</li>
+      <li>Retirez le panneau de l'ordinateur et le panneau du connecteur de carte réseau correspondant à votre carte réseau. Vous pouvez utiliser sans inconvénient un emplacement plus long que le connecteur de la carte réseau, mais n'essayez pas d'installer la carte réseau dans un emplacement plus court que le connecteur.</li>
+      <li>Enfoncez fermement la carte réseau dans l'emplacement et fixez le support.</li>
+      <li>Remettez le panneau de l'ordinateur en place. Branchez le cordon d'alimentation.</li>
+    </ol>
+
+<h3>Installation d'une carte Mezzanine</h3>
+<ol>
+      <li>Mettez l'ordinateur hors tension et débranchez le cordon d'alimentation.</li>
+      <li>Enlevez le panneau de l'ordinateur en place.</li>
+      <li>Alignez le connecteur PCIe sur la carte Mezzanine avec le connecteur et quatre entretoises en plastique sur la carte mère.</li>
+      <li>Insérez la carte réseau complètement dans le connecteur de la carte mère et enclenchez-la dans les quatre entretoises.</li>
+      <li>Remettez le panneau de l'ordinateur en place. Branchez le cordon d'alimentation.</li>
+</ol>
+
+
+<h2>Brancher le câble réseau</h2>
+<h3>Cartes cuivre&nbsp;:</h3>
+
+<p>Pour les réseaux 10&nbsp;Mbit/s, utilisez un câble réseau Ethernet à paires torsadées de catégorie 3, 4 ou 5.<br>Pour les réseaux 100 ou 1&nbsp;000&nbsp; Mbit/s et tous les réseaux résidentiels, utilisez un câble de catégorie 5 (4 paires).<br>Pour les réseaux 10&nbsp;Gbit/s, utilisez des câbles Ethernet de catégorie 6, 6a ou 7.</p>
+
+<h3>Cartes à fibre optique avec connecteur SC&nbsp;:</h3>
+<p>Retirez le panneau du connecteur à fibre optique et mettez-le de côté. Insérez un connecteur SC à fibre optique de type 1000Base-SX duplex dans les ports TX/RX du support de la carte.<h3>Cartes à fibre optique avec connecteur LC&nbsp;:</h3>
+<p>Retirez le panneau du connecteur à fibre optique et mettez-le de côté. Insérez un connecteur LC dans la carte, avec les câbles appropriés pour votre carte. Les câbles de conversion pour d'autres types de connecteur (p. ex., un connecteur SC) peuvent être utilisés si le câblage est conforme aux spécifications optiques de la carte, y compris les limites de longueur.<h3>Périphériques à fibre optique enfichables SFP+&nbsp;:</h3>
+<p>Installez le module et branchez le câble conformément aux instructions du fabricant du module.<h3>Connecteur CX4&nbsp;:</h3>
+<p>Le câblage physique doit être conforme aux spécifications IEEE Std 802.3ak, clause 54. Le connecteur de câble requis est un connecteur à verrou MDI, tel que défini par IEC 61076-3-113.<p>Démarrez votre ordinateur et suivez les instructions d'installation des pilotes ci-dessous.<hr>
+
+<h2>Installer les pilotes</h2>
+<h3>Systèmes d'exploitation Microsoft* Windows*</h3>
+<p>Les logiciels pour Microsoft Windows sont disponibles sous forme de packages&nbsp;:</p>
+<ul>
+  <li><b>Pilotes Windows uniquement.</b> Cette option n'inclut pas le logiciel Intel&reg; PROSet.</li>
+  <li><b>Intel PROSet uniquement.</b> Cette option n'inclut pas les pilotes Windows de base. Vous devez installer les pilotes de base avant d'installer Intel PROSet.</li>
+  <li><b>Pack de pilotes complet de la carte Ethernet Intel&reg;.</b> Cette option comprend les pilotes et les outils pour tous les systèmes d'exploitation, mais représente un téléchargement très volumineux.</li>
+</ul>
+<table class="note">
+  <tr>
+    <td valign="top"><img src="note.gif" alt="" width="28" height="21" border="0"></td>
+    <td valign="top"><strong>REMARQUES&nbsp;:</strong><ul>
+        <li>L'installation des pilotes nécessite des droits d'administrateur sur le système d'exploitation.</li>
+        <li>Consultez la page &laquo;&nbsp;Systèmes d'exploitation pris en charge&nbsp;&raquo; dans le guide utilisateur de la carte pour connaître les versions Windows prises en charge dans la version actuelle.</li>
+        <li>Intel PROSet n'est pas pris en charge sur toutes les versions de Windows. Consultez le guide utilisateur de la carte pour plus d'informations.</li>
+      </ul></td>
+  </tr>
+</table>
+<p>Installez les pilotes et les outils Windows en procédant de la manière suivante&nbsp;:</p>
+<ol>
+  <li>Téléchargez le package logiciel de votre choix à partir de <a href="http://support.intel.com">http://www.intel.fr/support</a>.<ul>
+      <li>Si vous téléchargez les pilotes de base uniquement&nbsp;:<ul>
+            <li>Téléchargez Wired_driver_XX.X_32.zip si vous utilisez un système d'exploitation 32&nbsp;bits.</li>
+            <li>Téléchargez Wired_driver_XX.X_x64.zip si vous utilisez un système d'exploitation 64&nbsp;bits.</li>
+         </ul>
+      </li>
+      <li>Si vous téléchargez Intel PROSet uniquement&nbsp;:<ul>
+            <li>Téléchargez Wired_PROSet_XX.X_32.zip si vous utilisez un système d'exploitation 32&nbsp;bits.</li>
+            <li>Téléchargez Wired_PROSet_XX.X_x64.zip si vous utilisez un système d'exploitation 64&nbsp;bits.</li>
+         </ul>
+      </li>
+      <li>Si vous téléchargez le pack de pilotes complet&nbsp;:<ul>
+            <li>Téléchargez Release_XX.X.zip.</li>
+         </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Extrayez le package logiciel téléchargé sur votre disque dur.</li>
+  <li>Si l'assistant <b>Nouveau matériel détecté </b>démarre, appuyez sur le bouton Annuler.</li>
+  <li>Si vous avez téléchargé le pack de pilotes complet&nbsp;:<ol type="A">
+       <li>Naviguez dans vos fichiers extraits jusqu'à \APPS\SETUP\SETUPBD, puis dans le sous-dossier Windows correspondant à votre version de Windows (32&nbsp;bits ou 64&nbsp;bits).</li>
+       <li>Dans le dossier Winx64 ou Win32, double-cliquez sur SetupBD.exe.</li>
+       <li>Suivez les étapes de l'assistant d'installation.</li>
+       <li>Si vous souhaitez installer Intel PROSet, accédez à \APPS\PROSETDX, puis au sous-dossier Windows correspondant à votre version de Windows (32&nbsp;bits ou 64&nbsp;bits).</li>
+       <li>Dans le dossier Winx64 ou Win32, double-cliquez sur DxSetup.exe.</li>
+       <li>Suivez les étapes de l'assistant d'installation.</li>
+    </ol>
+  </li>
+  <li>Si vous avez téléchargé des pilotes Windows uniquement&nbsp;:<ol type="A">
+      <li>Dans les fichiers extraits du téléchargement, double-cliquez sur SetupBD.exe.</li>
+      <li>Suivez les étapes de l'assistant d'installation.</li>
+    </ol>	
+  </li>
+  <li>Si vous souhaitez installer Intel PROSet&nbsp;:<ol type="A">
+      <li>Téléchargez et extrayez les fichiers de Wired_PROSet_XX.X_xx.zip, si ce n'est pas déjà fait.</li>
+      <li>Dans les fichiers extraits, double-cliquez sur DxSetup.exe.</li>
+  <li>Suivez les étapes de l'assistant d'installation.</li>
+    </ol>
+  </li>
+  
+</ol>
+
+
+<h3>Linux*</h3>
+<p>Pour créer un paquetage RPM* binaire de ce pilote, exécutez&nbsp;"rpmbuild -tb &lt;nom_de_fichier.tar.gz&gt;". Remplacez &lt;nom_de_fichier.tar.gz&gt; par le nom de fichier spécifique du pilote.</p>
+<table border="0" cellpadding="4" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111"  >
+  <tr>
+    <td width="13" valign="top" align="center"><img border="0" src="note.gif" width="28" height="21"></td>
+    <td><b>REMARQUES&nbsp;:</b><ul>
+		<li>Pour que la compilation fonctionne correctement, le noyau en cours d'exécution DOIT correspondre à la version et à la configuration des sources de noyau installées. Si vous venez de recompiler le noyau, redémarrez l'ordinateur maintenant.</li>
+		<li>La fonctionnalité RPM a été testée uniquement sur les distributions Red Hat.</li>
+	</ul></td>
+  </tr>
+  </table>
+  
+<ol>
+  <li>Placez le fichier tar du pilote de base dans le répertoire de votre choix. Par exemple, utilisez "/home/username/ixgbe" ou "/usr/local/src/ixgbe".</li>
+  <li>Décompressez l'archive, où &lt;x.x.x&gt; est le numéro de version du fichier tar du pilote&nbsp;:<blockquote><code>tar zxf ixgbe-&lt;x.x.x&gt;.tar.gz</code></blockquote></li>
+  <li>Passez au répertoire src du pilote en entrant la commande suivante, où &lt;x.x.x&gt; correspond au numéro de version du paquetage du pilote&nbsp;:<blockquote><code>cd ixgbe-&lt;x.x.x&gt;/src/</code></blockquote></li>
+  <li>Compilez le module du pilote&nbsp;:<blockquote><code>make install</code></blockquote>
+  <p>Les instructions binaires sont installées comme suit&nbsp;:</p>
+  <blockquote><code>/lib/modules/&lt;version_du_noyau&gt;/kernel/drivers/net/ixgbe.o</code></blockquote>
+  	<p>Les emplacements d'installation répertoriés ci-dessus sont les emplacements par défaut. Il se peut qu'ils ne soient pas corrects sur certaines distributions Linux.</p></li>
+  <li>Installez le module&nbsp;:<blockquote><code>modprobe ixgbe &lt;paramètre&gt;=&lt;valeur&gt;</code></blockquote></li>
+  <li>Affectez une adresse IP à l'interface en entrant la commande suivante, où &lt;x&gt; correspond au numéro d'interface&nbsp;:<blockquote><code>ifconfig eth&lt;x&gt; &lt;adresse_IP&gt;</code></blockquote>
+  </li>
+  <li>Vérifiez que l'interface fonctionne. Entrez la commande suivante, où &lt;adresse_IP&gt; correspond à l'adresse IP d'un autre ordinateur du même sous-réseau que celui sur lequel l'interface est testée&nbsp;:<blockquote><code>ping &lt;adresse_IP&gt;</code></blockquote>
+  </li>
+</ol>
+
+<h3>FreeBSD*</h3>
+
+<p>Ce pilote a été développé pour être utilisé avec le noyau FreeBSD, versions 4.8 et ultérieures.</p>
+<table class="note">
+  <tr>
+    <td valign="top" ><img border="0" src="note.gif" width="28" height="21"></td>
+    <td valign="top"><b>Remarque : </b>les sources du noyau doivent être installées pour compiler le module du pilote.</td>
+  </tr>
+</table>
+
+<p>Dans les instructions ci-dessous, x.x.x est la version du pilote telle qu'indiquée dans le nom du fichier tar du pilote.</p>
+
+<ol>
+  <li>Placez le fichier tar du pilote de base dans le répertoire de votre choix. Par exemple, utilisez /home/username/ixgb ou /usr/local/src/ixgb.</li>
+  
+  <li>Décompressez l'archive&nbsp;:<blockquote><code>tar xfz ixgb-x.x.x.tar.gz</code></blockquote>
+  <p>Cela crée un répertoire <code>ixgb-x.x.x</code>.</li>
+  
+  <li>Pour installer la page man&nbsp;:<blockquote><code>cd ixgb-x.x.x<br>gzip -c ixgb.4 &gt; /usr/share/man/man4/ixgb.4.gz</code>
+  </blockquote></li>
+  
+   <li>Pour charger le pilote sur un ordinateur en marche, exécutez les étapes suivantes&nbsp;:<blockquote><code>cd ixgb-x.x.x<br>make</code>
+     </blockquote>
+     <p>OU</p>
+    <blockquote><code>cd ixgb-x.x.x/src<br>make load</code>
+  	</blockquote></li>
+  
+	<li>Pour affecter une adresse IP à l'interface, entrez ce qui suit&nbsp;:<blockquote><code>ifconfig ixgb&lt;n&deg;_d'interface&gt; &lt;adresse_IP&gt;</code></blockquote></li>
+    
+	<li>Vérifiez que l'interface fonctionne. Entrez la commande suivante, où &lt;adresse_IP&gt; correspond à l'adresse IP d'un autre ordinateur du même sous-réseau que celui sur lequel l'interface est testée&nbsp;:<blockquote><code>ping &lt;adresse_IP&gt;</code></blockquote></li>
+    
+	<li>Si vous voulez que le pilote se charge automatiquement lors de l'amorçage de l'ordinateur&nbsp;:<blockquote><code>cd ixgb-x.x.x/src<br>make load<br>cp if_ixgb.ko /modules</code>
+    </blockquote>
+	<p>Modifiez le fichier /boot/loader.conf, puis ajoutez la ligne suivante&nbsp;:</p>
+    <blockquote><code>if_ixgb_load="YES"</code></blockquote>
+    <p>OU</p>
+    <p>compilez le pilote dans le noyau (voir élément 8). Éditez /etc/rc.conf et créez l&rsquo;entrée ifconfig_ixgb&lt;n&deg;_d'interface&gt; appropriée&nbsp;:</p>
+    
+    <blockquote><code>ifconfig_ixgb&lt;n&deg;_d'interface&gt;="&lt;paramètres_ifconfig&gt;"</code></blockquote>
+	<p>Exemple d'utilisation&nbsp;:</p>
+    <blockquote><code>ifconfig_ixgb0="inet 192.168.10.1 netmask 255.255.255.0"</code></blockquote>
+	</li>
+	
+	<li>Si vous voulez compiler le pilote dans le noyau, entrez&nbsp;:<blockquote><code>cd ixgb-x.x.x/src<br>mkdir /usr/src/sys/dev/ixgb<br>cp if_ixgb* /usr/src/sys/dev/ixgb<br>cp ixgb* /usr/src/sys/dev/ixgb<br>cp Makefile.kernel /usr/src/sys/modules/ixgb/Makefile<br></code>
+    </blockquote>
+	
+    <p>Modifiez le fichier /usr/src/sys/conf/files.i386 et ajoutez la ligne suivante&nbsp;:</p>
+    
+	<blockquote><code>dev/ixgb/ixgb_hw.c optional ixgb<br>dev/ixgb/ixgb_ee.c optional ixgb<br>dev/ixgb/if_ixgb.c optional ixgb<br></code>
+	</blockquote>
+    <p>Supprimez les lignes suivantes du fichier /usr/src/sys/conf/files.i386, si elles existent&nbsp;:</p>
+    <blockquote><code>/dev/ixgb/if_ixgb_fx_hw.c optional ixgb<br>/dev/ixgb/if_ixgb_phy.c optional ixgb</code>
+    </blockquote>
+	<p>Modifiez le fichier de configuration du noyau (à savoir, GENERIC ou MYKERNEL) dans /usr/src/sys/i386/conf et assurez-vous que la ligne suivante est présente&nbsp;:</p>
+	<blockquote><code>device ixgb</code></blockquote>
+    <p>Compilez et installez le noyau. Le système doit être redémarré pour que les mises à jour du noyau soient prises en compte.</p></li>
+</ol>
+
+<p>Pour obtenir des informations complémentaires sur la compilation du noyau, consultez la documentation du système d'exploitation FreeBSD.</p>
+
+<hr>
+<p class="legaldis"><a href="legaldis.htm">*Mentions légales</a></p>
+
+</body>
+</html>
